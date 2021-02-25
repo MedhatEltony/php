@@ -37,6 +37,18 @@ if (($experience >= 5 || $cert === true) || $projects >= 15) {
 // elseif statement 
 // 
 //switch 
+$carSpeed = 100;
+
+switch ($carSpeed) {
+    case 100:
+        echo '';
+        break;
+    case 200:
+        echo '';
+        break;
+    default:
+        echo '';
+}
 
 //loop 
     //while 
