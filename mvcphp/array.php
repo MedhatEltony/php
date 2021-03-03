@@ -55,7 +55,7 @@ $salaries1 = array(
     5000, // 4
 );
 
-list($sal1, $sal2, $sal3) = $salaries1;
+
 echo $sal1, $sal2;
 
 $num = range(8, 18);
@@ -67,7 +67,11 @@ $num = range(8, 18);
 // defining arrays with
 //array()
 //list()
+list($sal1, $sal2, $sal3) = $salaries1;
+echo $sal1, $sal2;
 //range()
+$num = range(8, 18);
 //check type with in_array
+
 // Associative Arrays
 // Multidimensional Arrays
