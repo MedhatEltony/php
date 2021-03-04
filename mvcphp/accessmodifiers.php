@@ -12,7 +12,7 @@
  * private  ان الخاصية او الدالة لا يمكن اطلاقا استدعاؤها خارج سباق عمل الكلاس
  * 
  * 
- * 
+ * protected ان الخاصية او الدالة لا يمكن استدعاءها خارج الكلاس ولكن يمكن استدعاءها داخل اي كلاس ابن 
  */
 
 
@@ -62,6 +62,23 @@ class Student
     public function getlevel()
     {
         return $this->level;
+    }
+
+    public function setName($name)
+    {
+        $name = $this->filterName($name);
+        $this->name = $name;
+
+        // $this->name = $this->filterName($name);
+    }
+
+    private function filterName($name)
+    {
+
+        $name = substr($name, 0, 12);
+        $name = ucwords($name);
+        return $name;
+        // return  ucwords(substr($name , 0 ,12));
     }
 }
 
