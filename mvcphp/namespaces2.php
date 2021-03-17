@@ -9,3 +9,19 @@
  * 
  * 
  */
+
+namespace Main\Controllers;
+
+class TestController
+{
+}
+
+// 1- unqualified names TestController 
+// 2- Qualified Prefixed name Controller\TestController 
+// 3- Fully Qualified , prefixed with global operator  \Main\Controller\TestController
+
+//$test = new TestController(); //  Main\Controller\TestController
+
+$a = __NAMESPACE__ . '\TestController';
+$var = new $a;
+var_dump($var);

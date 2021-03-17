@@ -84,6 +84,7 @@
         }
         echo '<tr><th> Total of salary is </th><th>' . $total . '</th><tr>';
         echo '</table>';
+
         ?>
 </body>
 
